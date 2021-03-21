@@ -13,7 +13,8 @@
 \usepackage[inline]{enumitem}
 
 %%% Дополнительная работа с математикой
-\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % AMS
+\usepackage[intlimits]{amsmath}
+\usepackage{amsfonts,amssymb,amsthm,mathtools}
 \usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
 
 %% Номера формул
@@ -27,10 +28,17 @@
 %% Табличика там где хочецца
 \usepackage{float}
 
+%% Хочу зачеркивать всякие приколы
+\usepackage{centernot}
+
+%% Дифференциалы и все что с ними связано
+\usepackage{physics}
+
 %% Графички функций
 \usepackage{pgfplots}
 \usepackage{tikz}
 \pgfplotsset{every axis/.style={scale only axis}}
+\pgfplotsset{compat=1.16}
 
 %% Время
 \usepackage{datetime}
@@ -50,21 +58,21 @@
 \definecolor{backcolour}{rgb}{0.95,0.95,0.95}
 
 \lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},   
+    backgroundcolor=\color{backcolour},
     commentstyle=\color{codegreen},
     keywordstyle=\color{codeblue},
     numberstyle=\tiny\color{codegray},
     stringstyle=\color{codeorange},
     basicstyle=\ttfamily\footnotesize,
-    breakatwhitespace=false,         
-    breaklines=true,                 
-    captionpos=b,                    
-    keepspaces=true,                 
-    numbers=left,                    
-    numbersep=5pt,                  
-    showspaces=false,                
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
     showstringspaces=false,
-    showtabs=false,                  
+    showtabs=false,
     tabsize=2
 }
 
@@ -101,7 +109,6 @@
 
 %% Свои команды
 \DeclareMathOperator{\rk}{\mathop{\mathrm{rk}}}
-\DeclareMathOperator{\tr}{\mathop{\mathrm{tr}}}
 \DeclareMathOperator{\pr}{\mathop{\mathrm{pr}}}
 \DeclareMathOperator{\ort}{\mathop{\mathrm{ort}}}
 \DeclareMathOperator{\vol}{\mathop{\mathrm{vol}}}
@@ -126,6 +133,7 @@
 \newtheorem{designation}{Обозначение}
 \newtheorem{lemma}[theorem]{Лемма}
 \newtheorem{problem}{Задача}[section]
+\newtheorem*{designation*}{Обозначение}
 \newtheorem*{comment}{Замечание}
 \newtheorem*{convention}{Соглашение}
 \newtheorem*{corollary}{Следствие}
@@ -211,9 +219,6 @@
 }
 \makeatother
 
-%% Команда для ||w||
-\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
-
 \makeatletter
 \let\oldnorm\norm
 \def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
@@ -241,3 +246,9 @@
 
 % Большие знаки суммы
 \everymath{\displaystyle} % math everywhere
+
+% Убрать отступ первой строки нового абзаца
+\setlength{\parindent}{0em}
+
+% Межстрочное расстояние
+\renewcommand{\baselinestretch}{1.3}

@@ -11,12 +11,33 @@
 
 # Навигация
 
-- [1 курс](#1-курс)
 - [2 курс](#2-курс)
+- [1 курс](#1-курс)
 - [Благодарность](#благодарность)
 - [Style guide](#style-guide)
 
 # Материалы
+
+## 2 курс
+
+### Математический анализ
+
+- [Конспект](https://hse-tex.me/course-2/mathematical-analysis.pdf)
+- [Коллоквиум I](https://hse-tex.me/course-2/mathematical-analysis-colloquium-1.pdf)
+- [Коллоквиум I [альтернативная версия]](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/DKozl50/Matan2-tex/master/Colloquiums/colloq1.pdf)
+- [Коллоквиум II](https://hse-tex.me/course-2/mathematical-analysis-colloquium-2.pdf)
+- [Коллоквиум III](https://hse-tex.me/course-2/mathematical-analysis-colloquium-3.pdf)
+
+### Дискретная математика
+
+- [Конспект](https://hse-tex.me/course-2/discrete-math-02-lecture-notes.pdf)
+- [Коллоквиум [от 195 группы]](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/DKozl50/Matan2-tex/master/Colloquiums/dm.pdf)
+
+### Теория вероятностей и математическая статистика
+
+- [Коллоквиум I](https://hse-tex.me/course-2/probability-theory-colloquium-1.pdf)
+- [Коллоквиум II](https://hse-tex.me/course-2/probability-theory-colloquium-2.pdf)
+- [Коллоквиум II [первые 5 билетов, альтернативная версия]](https://hse-tex.me/course-2/probability-theory-colloquium-2-alternative.pdf)
 
 ## 1 курс
 
@@ -44,22 +65,6 @@
 - [Коллоквиум IV](https://hse-tex.me/course-1/mathematical-analysis-colloquium-4.pdf)
 - [Экзамен I](https://hse-tex.me/course-1/mathematical-analysis-exam-1.pdf)
 
-## 2 курс
-
-### Математический анализ
-
-- [Конспект](https://hse-tex.me/course-2/mathematical-analysis.pdf)
-- [Коллоквиум I](https://hse-tex.me/course-2/mathematical-analysis-colloquium-1.pdf)
-- [Коллоквиум I [альтернативная версия]](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/DKozl50/Matan2-tex/master/Colloquiums/colloq1.pdf)
-
-### Дискретная математика
-
-- [Конспект](https://hse-tex.me/course-2/discrete-math-02-lecture-notes.pdf)
-- [Конспект [другая версия, только первая лекция]](https://hse-tex.me/course-2/discrete-mathematics.pdf)
-
-### Теория вероятностей и математическая статистика
-
-- [Коллоквиум I](https://hse-tex.me/course-2/probability-theory-colloquium-1.pdf)
 
 # Благодарность
 
@@ -82,8 +87,16 @@
 - [Сергей Лоптев](https://github.com/beastSL)
 - Даниил Казанцев
 - [Сергей Рахманов](https://github.com/shoraii)
+- [Максим Николаев](https://github.com/maximkm)
 - [Сергей Пилипенко](https://github.com/territhing)
-- [Болонин Денис](https://github.com/BoloniniD)
+- [Денис Болонин](https://github.com/BoloniniD)
+- [Егор Гутров](https://github.com/e-gutrov)
+- [Ульяна Виноградова](https://github.com/ulvivl)
+- [Яна Долватова](https://github.com/yanadlv)
+- [Александр Богданов](https://github.com/SphericalPotatoInVacuum)
+- [Анастасия Григорьева](https://github.com/weifoll)
+- [Елизавета Орешонок](https://github.com/eaoresh)
+- [Алиса Вернигор](https://github.com/alisa-vernigor)
 
 
 Не стесняйтесь добавлять себя в этот список в pull request'ах.
@@ -102,8 +115,11 @@
     ```
 
     Было
+    <br/><br/>
     ![Красные ссылки](https://i.imgur.com/nVDsk2t.png)
-    Стало 
+    <br/><br/>
+    Стало
+    <br/><br/>
     ![Синие ссылки](https://i.imgur.com/hcgLZiC.png)
 
 - Старайтесь не писать много операторов подряд без пробельных символов, чтобы TeX читался лучше.
@@ -140,9 +156,9 @@
 
 - Если в скобки надо обернуть выражение, которое по размеру выше стандартных скобок, используйте конструкции вида `\left(...\right)`, `\left\{...\right\}` и так далее, а не просто `(...)`, `\{...\}`.
     Но не стоит их использовать везде, читать или изменять такой код сложнее.
-    Также, из-за скобок могут быть проблемы с пробелами, например 
+    Также, из-за скобок могут быть проблемы с пробелами, например
     ```
-    @InLaTeXbot 
+    @InLaTeXbot
     \begin{align*}
     & U\left(S\left(n\right),x\right) \\
     & U\left(S\left(n\right), x\right) \\
